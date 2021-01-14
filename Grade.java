@@ -34,7 +34,7 @@ public class Grade {
             fin.close();
         }catch (Exception e){
             try{
-                FileWriter fout = new FileWriter("C:\\\\Users\\\\jjjjy\\\\InJ\\\\Just\\\\src\\\\grade\\\\score.txt");
+                FileWriter fout = new FileWriter("C:\\\\Users\\\\jjjjy\\\\InJ\\\\JProject\\\\src\\\\grade\\\\score.txt");
                 System.out.println("파일이 생성되었습니다.");
                 fout.close();
             }catch (Exception ex){
@@ -115,7 +115,7 @@ public class Grade {
             }
             else if(choice==4){
                 try{
-                    FileWriter fout = new FileWriter("C:\\\\Users\\\\jjjjy\\\\InJ\\\\Just\\\\src\\\\grade\\\\score.txt");
+                    FileWriter fout = new FileWriter("C:\\\\Users\\\\jjjjy\\\\InJ\\\\JProject\\\\src\\\\grade\\\\score.txt");
                     for(i=0; i<cnt; i++){
                         fout.write(String.format("%20s %5s %5s %5s\n", String.valueOf(stdArr[i].sno), stdArr[i].mid, stdArr[i].fin, stdArr[i].total));
                     }
@@ -127,8 +127,8 @@ public class Grade {
             }
             else if(choice==5){
                 try{
-                    FileReader fin = new FileReader("C:\\\\Users\\\\jjjjy\\\\InJ\\\\Just\\\\src\\\\grade\\\\score.txt");
-                    FileWriter cpy = new FileWriter("C:\\\\Users\\\\jjjjy\\\\InJ\\\\Just\\\\src\\\\grade\\\\score.txt_사본");
+                    FileReader fin = new FileReader("C:\\\\Users\\\\jjjjy\\\\InJ\\\\JProject\\\\src\\\\grade\\\\score.txt");
+                    FileWriter cpy = new FileWriter("C:\\\\Users\\\\jjjjy\\\\InJ\\\\JProject\\\\src\\\\grade\\\\score.txt_사본");
                     int c;
                     while((c=fin.read()) != -1) {
                         cpy.write((char)c);
